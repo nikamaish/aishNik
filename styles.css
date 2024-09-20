@@ -91,9 +91,6 @@ a{
     display: none;
 }
 
-main {
-    padding: 120px 2rem 2rem;
-}
 
 /* Rest of your CSS styles... */
 
@@ -107,22 +104,25 @@ main {
         flex-direction: column;
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        right: -100%; /* Start off-screen to the right */
+        text-align: center;
+        width: 50%; /* Full width for better visibility */
         background-color: var(--tech-stack-box-first-color);
-        padding: 1rem;
-        border-radius: 0 0 25px 25px;
+        padding:  1rem 0;
+        border-radius: 0 25px 25px 25px;
     }
 
     .navbaritems.block {
         display: flex;
+        right: 0; 
     }
 
     .toggle {
         display: block;
     }
+    
 
     .navlink {
-        margin: 0.5rem 0;
+        margin: 1rem 0;
     }
 }
