@@ -1,5 +1,8 @@
-body {
+html,body {
     background: linear-gradient(to right, #05050b, #301a4b);
+    height: 100%;
+    margin: 0;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
@@ -14,6 +17,7 @@ body {
 
 
 .header {
+    height: 80px;
     position: fixed;
     width: 100%;
     top: 40px;
@@ -23,17 +27,7 @@ body {
     justify-content: center;
 }
 
-.blob-my {
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
-    background: rgba(76, 0, 255, 0.1);
-    filter: blur(20px);
-    z-index: -1;
-}
+
 
 .navbar {
     display: flex;
@@ -57,7 +51,7 @@ body {
 }
 
 
-a{
+.navbaritems a{
     text-decoration: none;
     color: #fff;
 }
@@ -92,7 +86,115 @@ a{
 }
 
 
-/* Rest of your CSS styles... */
+.intro {
+    height: calc(150vh - 80px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */ 
+    color: white; /* Ensure text is visible */
+}
+
+.intro-container {
+    display: flex;                  /* Use flexbox */
+    justify-content: space-between; /* Space between elements */
+    align-items: center;           /* Center items vertically */
+    height: 100%;                  /* Full height of the parent */
+    padding: 20px;                
+    font-family: 'Inter', sans-serif;
+}
+
+.intro-left {
+    flex: 1;                       /* Allow left part to take up space */
+    color: #fff;                  /* Set text color */
+    margin-left: 8%;
+}
+
+.intro-left h1 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 108px;
+    margin: 0;
+}
+
+.intro-left h2{
+    font-weight: 400;
+    font-size: 35px;
+    color:#B051C3;
+    line-height: 53px;
+    font-family: Nunito, sans-serif;
+    margin: 0; 
+}
+
+.intro-left .social-media{
+display: flex; 
+gap: 30px;
+margin-top: 50px;
+}
+
+.intro-left .social-media i{
+    cursor: pointer;
+}
+
+
+.intro-right {
+    flex: 1;                       
+    color: #fff;                  
+    text-align: right;             
+}
+
+
+.aboutme{
+    padding:0 20px 0 100px;
+}
+.aboutme-container {
+    display: flex;
+    width: 100%;
+}
+
+.aboutme-left {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.aboutme-left h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.aboutme-left p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+.aboutme-left .btn{
+    width: 40%;
+    margin-top: 20px;
+}
+
+.aboutme-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.aboutme-right img {
+    width: 70%;
+    height: 90%;
+    object-fit: fill;
+    border-radius: 20px;
+}
+
 
 @media (max-width: 768px) {
     .navbar {

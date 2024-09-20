@@ -6,12 +6,13 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <div class="header">
+    
+    <header class="header">
         <div class="blob-my"></div>
-        <div class="navbar">
+        <nav class="navbar">
             <div class="navbar-content">
                 <a href="/">
                     <div class="logo">
@@ -28,17 +29,67 @@
                     <a href="#home" class="navlink"> Home</a>
                     <a href="#about" class="navlink">About Me</a>
                     <a href="#projects" class="navlink">Work</a>
-                    <!-- <a href="#blog" class="navlink">Blog</a> -->
                     <a href="#testimonials" class="navlink">Internship</a>
                     <a href="#contact" class="navlink">Contact</a>
                     <a href="#footer" class="navlink">Footer</a>
                 </div>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
     
+    <section id="home" class="intro">
+        <div class="intro-container">
+            <div class="intro-left">
+                <h2>Hello Guys, </h2>
+                <h1 >I'm Aishwarya 
+                    <br>
+                    Nikam</h1>
+                <h2>
+                    a <span id="typed" ></span>
+                </h2>
+                
+                <div class="social-media">
+
+                    <i class="fa-brands fa-github fa-beat fa-2xl"><a href="https://github.com/nikamaish" target="_blank"></a></i>
+                    <i class="fa-brands fa-medium fa-beat fa-2xl"><a href="" target="_blank"></a></i>
+                    <i class="fa-regular fa-envelope fa-beat fa-2xl" target="_blank"></i>
+                    <i class="fa-brands fa-linkedin fa-beat fa-2xl" target="_blank"></i>
+                    
+                </div>
+           
+           
+                <div class="intro-right">
+               <img src="" alt="">
+               <!-- <h2>hellow</h2> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutme" class="aboutme">
+        <div class="aboutme-container">
+            <div class="aboutme-left">
+                <h1>About Me</h1>
+                <p>
+                    Hey there! 👋 I'm Aishwarya Nikam, IT graduate from P.E.S' Modern College of Engineering Pune with CGPA of 8.57, I'm a Full Stack Developer, specializing in something cool called the MERN Stack. Gaming 🎮 is my absolute jam, and I'm also geeking out about Blockchain for Web 3.0. 💻 One thing about me – when I start something, I make sure to finish it!
+                </p>
+                <a href="./Aishwarya_Nikam_Resume__August.pdf" download class="btn btn-primary">
+                    Download Resume
+                </a>
+                            </div>
+            <div class="aboutme-right">
+                <img src="./aishwarya.jpg" width="300vw" height="300vh" alt="">
+            </div>
+        </div>
+        
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="./script.js"></script>
-   
+
 </body>
 </html>
+
