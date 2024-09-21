@@ -87,7 +87,7 @@ html,body {
 
 
 .intro {
-    height: calc(150vh - 80px); 
+    height: calc(140vh - 80px); 
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */ 
@@ -139,9 +139,15 @@ margin-top: 50px;
 .intro-right {
     flex: 1;                       
     color: #fff;                  
-    text-align: right;             
+    text-align: right; 
+    margin-right: 8%;            
 }
 
+.intro-right img {
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+}
 
 .aboutme{
     padding:0 20px 0 100px;
@@ -191,7 +197,7 @@ margin-top: 50px;
 .aboutme-right img {
     width: 70%;
     height: 90%;
-    object-fit: fill;
+    /* object-fit: cover; */
     border-radius: 20px;
 }
 
