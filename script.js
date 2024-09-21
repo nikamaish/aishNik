@@ -90,3 +90,105 @@ document.addEventListener("DOMContentLoaded", () => {
     platforms.map(skill => createSkillElement(skill, platformsDiv));
 });
 
+
+const projects = [
+    {
+      imgSrc: 'GM.png',
+      title: 'E-ticket Connect',
+      description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
+      technologies: ['react.webp', 'node js.webp', 'express.webp', 'mongodb.webp'],
+      liveDemo: '#',
+      sourceCode: '#'
+    },
+    {
+      imgSrc: 'VM.png',
+      title: 'Trek Travel',
+      description: 'Plan your perfect trip with a comprehensive guide to hotels, travel options, and user reviews tailored to your needs.',
+      technologies: ['react.webp', 'socketio.svg', 'flask.svg', 'chartjs.svg', 'mongodb.webp'],
+      liveDemo: '#',
+      sourceCode: '#'
+    },
+
+    { 
+        imgSrc: 'Portfolio.png',
+        title: 'E-ticket Connect',
+        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
+        technologies: ['react.webp', 'css.webp', 'firebase.webp'],
+        liveDemo: '#',
+        sourceCode: '#'
+    },
+
+    { 
+        imgSrc: 'SimplyGoods.png',
+        title: 'E-ticket Connect',
+        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
+        technologies: ['react.webp', 'node js.webp', 'express.webp', 'mongodb.webp'],
+        liveDemo: '#',
+        sourceCode: '#'
+    },
+
+    { 
+        imgSrc: 'QuizApp.png',
+        title: 'E-ticket Connect',
+        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
+        technologies: ['html.webp', 'css.webp','github.svg', 'js.webp'],
+        liveDemo: '#',
+        sourceCode: '#'
+    },
+    { 
+        imgSrc: 'Signature.png',
+        title: 'E-ticket Connect',
+        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
+        technologies: ['html.webp', 'css.webp','github.svg', 'js.webp'],
+        liveDemo: '#',
+        sourceCode: '#'
+    },
+    { 
+        imgSrc: 'mulitstep form.png',
+        title: 'E-ticket Connect',
+        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
+        technologies: ['react.webp', 'tailwindcss.webp', 'vercel.svg'],
+        liveDemo: '#',
+        sourceCode: '#'
+    },
+    { 
+        imgSrc: 'WebCraftEditor.png',
+        title: 'E-ticket Connect',
+        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
+        technologies: ['html.webp', 'css.webp','github.svg', 'js.webp'],
+        liveDemo: '#',
+        sourceCode: '#'
+    }
+
+
+    // Add more projects as needed
+  ];
+  
+  const projectsContainer = document.getElementById('projects-container');
+  
+  // Use map to dynamically create the project cards
+  projects.map((project) => {
+    const projectCard = `
+      <div class="project-card">
+        <img src="${project.imgSrc}" alt="Project Image" class="project-card-image">
+        <div class="project-card-content">
+          <h3>${project.title}</h3>
+          ${project.date ? `<p class="project-date">${project.date}</p>` : ''}
+          <p>${project.description}</p>
+        </div>
+        <div class="project-card-footer">
+          <div class="tech-icons">
+            ${project.technologies.map((techIcon) => `<img src="${techIcon}" alt="Technology">`).join('')}
+          </div>
+          <div class="project-actions">
+            <a href="${project.liveDemo}" class="project-btn">Live Demo</a>
+            <a href="${project.sourceCode}" class="project-btn">Source Code</a>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    projectsContainer.innerHTML += projectCard;
+    
+  });
+ 
