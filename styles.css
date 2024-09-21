@@ -150,7 +150,6 @@ margin-top: 50px;
 }
 
 .aboutme{
-    height: calc(90vh - 80px); 
     padding:0 20px 0 100px;
 }
 .aboutme-container {
@@ -204,7 +203,7 @@ margin-top: 50px;
 
 
 .aboutme {
-    margin-bottom: 60px; /* Adjust the value as needed */
+    margin-bottom: 80px; /* Adjust the value as needed */
 }
 .skills h1{
     text-align: center;

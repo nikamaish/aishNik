@@ -89,3 +89,4 @@ document.addEventListener("DOMContentLoaded", () => {
     const platformsDiv = document.querySelector(".Platforms");
     platforms.map(skill => createSkillElement(skill, platformsDiv));
 });
+
