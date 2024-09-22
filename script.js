@@ -278,3 +278,36 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   // Clear the form after opening the new window
   document.getElementById('contactForm').reset();
 });
+
+
+const world = Globe()
+(document.querySelector('.globe'))
+.globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+.bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+.backgroundColor('rgba(0, 0, 0, 0)') // No background
+.showAtmosphere(false) // Remove atmosphere
+.pointOfView({ lat: 1.3521, lng: 103.8198, altitude: 2 });
+world.controls().enableZoom = false;
+
+
+// Fetch world cities data
+fetch('//unpkg.com/three-globe/example/datasets/world_cities.json')
+.then(res => res.json())
+.then(cities => {
+  world.pointsData(cities)
+    .pointAltitude(0.01)
+    .pointRadius(0.05)
+    .pointColor(() => 'orange')
+    .pointsMerge(true);
+});
+
+// Spin the globe by adjusting the longitude
+let lng = 0; // Start longitude
+
+function spinGlobe() {
+  lng += 0.6; // Adjust this value to control the spin speed
+  world.pointOfView({ lat: 1.3521, lng: lng, altitude: 2 });
+  requestAnimationFrame(spinGlobe); // Continually update the globe's position
+}
+
+spinGlobe(); // Start the spinning effect

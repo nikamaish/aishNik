@@ -2,6 +2,7 @@ html,body {
     background: linear-gradient(to right, #05050b, #301a4b);
     height: 100%;
     margin: 0;
+    overflow-x: hidden
 
 }
 
@@ -422,6 +423,16 @@ margin-top: 50px;
     color: #ccc;
 }
 
+.contact-left .globe {
+    width: 100%;
+    height: 100%;
+    /* margin-right: 100px; */
+    position: relative;
+    right: 460px;
+    bottom: 30px;
+    z-index: 1;
+}
+
 .contact-right {
     flex: 0.6;
     max-width: 60%;
@@ -457,6 +468,8 @@ textarea {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     font-family: 'Inter', sans-serif;
+    position: relative;
+    z-index: 2;
 }
 
 textarea {
@@ -493,6 +506,11 @@ textarea:focus {
     margin-top: 5px;
     display: none;
 }
+
+
+ canvas {
+            background-color: transparent !important;
+        }
 
 @media (max-width: 768px) {
     .navbar {
