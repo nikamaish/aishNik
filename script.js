@@ -97,16 +97,16 @@ const projects = [
       title: 'E-ticket Connect',
       description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
       technologies: ['react.webp', 'node js.webp', 'express.webp', 'mongodb.webp'],
-      liveDemo: '#',
-      sourceCode: '#'
+      liveProject: 'https://gaming-hub-98328.web.app',
+      sourceCode: 'https://github.com/nikamaish/GuildMasters'
     },
     {
       imgSrc: 'VM.png',
       title: 'Trek Travel',
       description: 'Plan your perfect trip with a comprehensive guide to hotels, travel options, and user reviews tailored to your needs.',
       technologies: ['react.webp', 'socketio.svg', 'flask.svg', 'chartjs.svg', 'mongodb.webp'],
-      liveDemo: '#',
-      sourceCode: '#'
+      liveProject: 'https://vm-frontend-phi.vercel.app',
+      sourceCode: 'https://github.com/nikamaish/VisualMaster_BE'
     },
 
     { 
@@ -114,8 +114,8 @@ const projects = [
         title: 'E-ticket Connect',
         description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
         technologies: ['react.webp', 'css.webp', 'firebase.webp'],
-        liveDemo: '#',
-        sourceCode: '#'
+        liveProject: 'https://portfolio-aish.web.app',
+        sourceCode: 'https://github.com/nikamaish/aish_portfolio'
     },
 
     { 
@@ -123,8 +123,8 @@ const projects = [
         title: 'E-ticket Connect',
         description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
         technologies: ['react.webp', 'node js.webp', 'express.webp', 'mongodb.webp'],
-        liveDemo: '#',
-        sourceCode: '#'
+        liveProject: 'https://simplygoods-aish.web.app',
+        sourceCode: 'https://github.com/nikamaish/simply_Goods'
     },
 
     { 
@@ -132,32 +132,32 @@ const projects = [
         title: 'E-ticket Connect',
         description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
         technologies: ['html.webp', 'css.webp','github.svg', 'js.webp'],
-        liveDemo: '#',
-        sourceCode: '#'
+        liveProject: 'https://nikamaish.github.io/Quiz_App',
+        sourceCode: 'https://github.com/nikamaish/Quiz_App'
     },
     { 
         imgSrc: 'Signature.png',
         title: 'E-ticket Connect',
         description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
         technologies: ['html.webp', 'css.webp','github.svg', 'js.webp'],
-        liveDemo: '#',
-        sourceCode: '#'
+        liveProject: 'https://nikamaish.github.io/Signature_App',
+        sourceCode: 'https://github.com/nikamaish/Signature_App'
     },
     { 
         imgSrc: 'mulitstep form.png',
         title: 'E-ticket Connect',
         description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
         technologies: ['react.webp', 'tailwindcss.webp', 'vercel.svg'],
-        liveDemo: '#',
-        sourceCode: '#'
+        liveProject: 'https://multistep-form-aish.netlify.app',
+        sourceCode: 'https://github.com/nikamaish/Aeonaxy_React_Tailwind'
     },
     { 
         imgSrc: 'WebCraftEditor.png',
         title: 'E-ticket Connect',
         description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
         technologies: ['html.webp', 'css.webp','github.svg', 'js.webp'],
-        liveDemo: '#',
-        sourceCode: '#'
+        liveProject: 'https://nikamaish.github.io/HTML_CSS_Editor',
+        sourceCode: 'https://github.com/nikamaish/HTML_CSS_Editor'
     }
 
 
@@ -181,7 +181,7 @@ const projects = [
             ${project.technologies.map((techIcon) => `<img src="${techIcon}" alt="Technology">`).join('')}
           </div>
           <div class="project-actions">
-            <a href="${project.liveDemo}" class="project-btn">Live Demo</a>
+            <a href="${project.liveProject}" class="project-btn">Live Project</a>
             <a href="${project.sourceCode}" class="project-btn">Source Code</a>
           </div>
         </div>
@@ -192,3 +192,89 @@ const projects = [
     
   });
  
+
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent form from submitting
+
+    // Validate fields
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const message = document.getElementById('message');
+
+    let isValid = true;
+
+    // Validate name
+    if (name.value.trim() === '') {
+        setError(name, 'Name is required');
+        isValid = false;
+    } else {
+        clearError(name);
+    }
+
+    // Validate email
+    if (email.value.trim() === '') {
+        setError(email, 'Email is required');
+        isValid = false;
+    } else if (!isValidEmail(email.value)) {
+        setError(email, 'Please enter a valid email address');
+        isValid = false;
+    } else {
+        clearError(email);
+    }
+
+    // Validate message
+    if (message.value.trim() === '') {
+        setError(message, 'Message cannot be empty');
+        isValid = false;
+    } else {
+        clearError(message);
+    }
+
+    // If the form is valid, submit it
+    if (isValid) {
+        alert('Form submitted successfully!');
+        // Here you can submit the form data to the backend
+        this.submit();
+    }
+});
+
+function setError(element, message) {
+    const parent = element.parentElement;
+    const errorDisplay = parent.querySelector('.error-message');
+    errorDisplay.innerText = message;
+    errorDisplay.style.display = 'block';
+    element.style.borderColor = '#ff4d4d';
+}
+
+function clearError(element) {
+    const parent = element.parentElement;
+    const errorDisplay = parent.querySelector('.error-message');
+    errorDisplay.innerText = '';
+    errorDisplay.style.display = 'none';
+    element.style.borderColor = '#bbb';
+}
+
+function isValidEmail(email) {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
+}
+
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  const name = encodeURIComponent(document.getElementById('name').value);
+  const email = encodeURIComponent(document.getElementById('email').value);
+  const subject = encodeURIComponent(document.getElementById('subject').value);
+  const message = encodeURIComponent(document.getElementById('message').value);
+
+  const emailRecipient = 'aishnikam31@gmail.com'; // Your recipient email
+
+  const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailRecipient}&su=${subject}&body=${message}&tf=cm`;
+
+  // Open the mailto link in a new window
+  window.open(mailtoLink, '_blank');
+
+  // Clear the form after opening the new window
+  document.getElementById('contactForm').reset();
+});

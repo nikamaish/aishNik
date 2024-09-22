@@ -50,10 +50,10 @@
                 
                 <div class="social-media">
 
-                    <a href="https://github.com/nikamaish" target="_blank"><i class="fa-brands fa-github fa-beat fa-xl"></i></a>
-                    <a href="https://medium.com/@aishTechie" target="_blank"><i class="fa-brands fa-medium fa-beat fa-xl"></i></a>
-                    <a href="aishnikam31@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-beat fa-xl" ></i></a>
-                    <a href="https://www.linkedin.com/in/%F0%9D%90%80%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%B0%F0%9D%90%9A%F0%9D%90%AB%F0%9D%90%B2%F0%9D%90%9A-%F0%9D%90%8D%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%9A%F0%9D%90%A6-8175221b5/" target="_blank"><i class="fa-brands fa-linkedin fa-beat fa-xl"></i></a>
+                    <a href="https://github.com/nikamaish" target="_blank"><img src="githublogo.webp"  width="25%" height="25%"></a>
+                    <!-- <a href="https://www.linkedin.com/in/%F0%9D%90%80%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%B0%F0%9D%90%9A%F0%9D%90%AB%F0%9D%90%B2%F0%9D%90%9A-%F0%9D%90%8D%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%9A%F0%9D%90%A6-8175221b5/"  target="_blank" ><img src="linkedin logo.webp"  width="40%" height="30%" alt=""></a> -->
+                    <a href="https://medium.com/@aishTechie" target="_blank"><img src="medium.svg" width="25%" height="25%" alt=""></a>
+                    <a href="mailto:aishnikam31@gmail.com" target="_blank"><img src="gmail.webp" width="25%" height="25%" alt="Email"></a>
                     
                 </div>
                 </div>
@@ -122,8 +122,65 @@
     </section>
     
       
-      
+    <section id="contact" class="contact">
+        <h2 class="contact-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-left">
+                <p>If you have any questions or need further information, feel free to reach out through the contact form or via my social media channels.</p>
+            </div>
+            <div class="contact-right">
+                <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+                        <small class="error-message"></small>
+                    </div>
+                    <button type="submit" class="contact-submit">Send Message</button>
+                    <span id="responseMessage"></span>
+                </form>
+            </div>
+        </div>
+    </section>
 
+      
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">
+               Thank you for the visit!  
+                <br>
+                If you're interested in working with me or have any exciting opportunities, 
+                <br>
+                feel free to reach out!
+            </p>
+            <div class="footer-social">
+
+                <a href="https://github.com/nikamaish" target="_blank"><i class="fa-brands fa-github fa-bounce fa-xl"></i></a>
+                <a href="https://medium.com/@aishTechie" target="_blank"><i class="fa-brands fa-medium fa-bounce fa-xl"></i></a>
+                <a href="aishnikam31@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-bounce fa-xl" ></i></a>
+                <a href="https://www.linkedin.com/in/%F0%9D%90%80%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%B0%F0%9D%90%9A%F0%9D%90%AB%F0%9D%90%B2%F0%9D%90%9A-%F0%9D%90%8D%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%9A%F0%9D%90%A6-8175221b5/" target="_blank"><i class="fa-brands fa-linkedin fa-bounce fa-xl"></i></a>
+                
+            </div>
+            <p class="footer-copyright">
+                &copy; 2024 Aishwarya Nikam. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    
     
 
 
