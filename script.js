@@ -110,7 +110,7 @@ const projects = [
     },
 
     { 
-        imgSrc: 'assets/Portfolio.png',
+        imgSrc: 'assets/portfolio.png',
         title: 'Portfolio',
         description: 'Developed a personal portfolio website to showcase my projects, skills, and experience. It has attractive UI and responsive. Deployed on Firebase.',
         technologies: ['assets/react.webp', 'assets/css.webp', 'assets/firebase.webp'],
