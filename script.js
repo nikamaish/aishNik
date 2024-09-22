@@ -104,7 +104,7 @@ const projects = [
       imgSrc: 'assets/VM.png',
       title: 'VisualMaster',
       description: 'Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding, particularly catering to newcomers in the stock market world.',
-      technologies: ['assets/react.webp', 'assets/socketio.svg', 'assets/flask.svg', 'assets/chartjs.svg', 'assets/mongodb.webp'],
+      technologies: ['assets/react.webp','assets/flask.svg', 'assets/chartjs.svg', 'assets/socketio.svg',  'assets/mongodb.webp'],
       liveProject: 'https://vm-frontend-phi.vercel.app',
       sourceCode: 'https://github.com/nikamaish/VisualMaster_BE'
     },
@@ -146,7 +146,7 @@ const projects = [
     { 
         imgSrc: 'assets/mulitstep form.png',
         title: 'MultiStep Form',
-        description: 'A multi-step form that allows users to input their details in a step-by-step manner. It is built using React and Tailwind CSS, and deployed on Netlify.',
+        description: 'A multi-step form that allows users to input their details in a step-by-step manner. It is built using Rect and Tailwind CSS, and it is responsive, deployed on Netlify.',
         technologies: ['assets/react.webp', 'assets/tailwindcss.webp', 'assets/vercel.svg'],
         liveProject: 'https://multistep-form-aish.netlify.app',
         sourceCode: 'https://github.com/nikamaish/Aeonaxy_React_Tailwind'

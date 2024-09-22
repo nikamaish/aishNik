@@ -2,7 +2,8 @@ html,body {
     background: linear-gradient(to right, #05050b, #301a4b);
     height: 100%;
     margin: 0;
-    overflow-x: hidden
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 
 }
 
@@ -13,6 +14,10 @@ html,body {
     --tech-stack-box-first-color: rgba(12, 9, 19, 0.4);
     --tech-stack-box-second-color: rgba(7, 6, 15, 0.1);
     --color-navbarBorder-dark: rgba(255, 255, 255, 0.1);
+}
+
+section {
+    scroll-margin-top: 100px; /* Adjust to match your header height */
 }
 
 
@@ -178,7 +183,7 @@ gap: 40px;
     color: white;
     font-family: 'Inter', sans-serif;
 }
-.aboutme-left h1{
+.aboutme h1{
     color: #fff;
     font-size: 50px;
     font-weight: 700;
@@ -352,51 +357,6 @@ gap: 40px;
 }
 
 
-.footer {
-    color: #ffffff;
-    text-align: center;
-    padding: 30px 20px;
-    font-family: 'Inter', sans-serif;
-    border-top: 1px solid var(--color-navbarBorder-dark);
-}
-
-.footer-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-text {
-    font-size: 18px;
-    margin-bottom: 20px;
-    line-height: 30px;
-}
-
-.footer-social {
-    display: flex;
-    gap: 50px;
-    margin: 30px 0;
-}
-.footer-social a:hover{
-    color: #fff;
-}
-.footer-social a {
-    color: #fff;
-}
-.footer-social:hover{
-    text-decoration: none;
-}
-
-.footer-copyright {
-    font-size: 14px;
-    margin-top: 20px;
-    color: #bbbbbb;
-}
-
-
 .contact {
     padding: 40px;
     color: #fff;
@@ -524,7 +484,54 @@ textarea:focus {
 
  canvas {
             background-color: transparent !important;
-        }
+}
+
+
+.footer {
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+            font-family: 'Inter', sans-serif;
+            border-top: 1px solid var(--color-navbarBorder-dark);
+}
+        
+.footer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
+        
+.footer-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 30px;
+}
+        
+.footer-social {
+            display: flex;
+            gap: 50px;
+            margin: 30px 0;
+}
+.footer-social a:hover{
+            color: #fff;
+}
+.footer-social a {
+            color: #fff;
+}
+.footer-social:hover{
+            text-decoration: none;
+}
+        
+.footer-copyright {
+            font-size: 14px;
+            margin-top: 20px;
+            color: #bbbbbb;
+}
+        
+
 
 @media (max-width: 768px) {
     .navbar {
@@ -554,5 +561,261 @@ textarea:focus {
 
     .navlink {
         margin: 1rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .intro-container {
+        flex-direction: column-reverse; /* Display the right part (image) first */
+        align-items: center;
+    }
+    
+    .intro-left {
+        padding-top: 10vh;
+    }
+
+    .intro {
+        height: auto; /* Adjust height */
+        padding-top: 100px; /* Add some padding */
+    }
+
+    .intro-container {
+        flex-direction: column-reverse; /* Display the right part first */
+        align-items: center;
+    }
+
+    .intro-left {
+        margin-left: 0; /* Remove the margin */
+    }
+
+    .intro-left h1 {
+        font-size: 50px; /* Adjust font size */
+        line-height: 70px;
+    }
+
+    .intro-left h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .intro-right img {
+        width: 90%; /* Make image width smaller */
+        height: auto;
+        margin-left: 0; /* Center image */
+    }
+
+    .intro-left .social-media {
+        justify-content: center;
+        gap: 20px; /* Reduce gap between social media icons */
+    }
+}
+
+/* Media query for devices with a max width of 480px (mobile phones) */
+/* Ensure .intro is below the navbar on small devices */
+@media (max-width: 480px) {
+    .intro {
+        padding-top: 15vh; /* Add space equivalent to navbar height */
+    }
+
+    .intro-container {
+        flex-direction: column-reverse; /* Display the right part (image) first */
+        align-items: center;
+    }
+    
+    .intro-left {
+        padding-top: 10vh;
+    }
+    .intro-left h1 {
+        font-size: 40px; /* Further adjust font size */
+        line-height: 60px;
+    }
+
+    .intro-left h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .intro-right img {
+        width: 100%; /* Take full width of the container */
+        height: auto;
+        margin-left: 0;
+    }
+
+    .intro-left .social-media {
+        flex-direction: row; /* Stack social media icons vertically */
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .aboutme {
+        padding: 0 20px; /* Reduce padding */
+        height: auto; /* Allow height to adjust */
+        border-top: 1px solid var(--color-navbarBorder-dark);
+        
+    }
+    .aboutme h1 {
+        padding: 20px 0;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .aboutme-container {
+        flex-direction: column-reverse; /* Display the right part first */
+        align-items: center;
+    }
+
+    .aboutme-left {
+        padding-top: 20px;
+    }
+    .aboutme-left h1 {
+        font-size: 40px; /* Adjust heading size */
+    }
+
+    .aboutme-left p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+
+    .aboutme-left .btn {
+        width: 60%; /* Increase button width */
+    }
+
+    .aboutme-right img {
+        width: 80%; /* Adjust image size */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutme-container {
+        flex-direction: column-reverse; /* Display the right part first */
+        align-items: center;
+    }
+
+    .aboutme-left h1 {
+        font-size: 30px; /* Further adjust heading size */
+    }
+
+    .aboutme-left p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+
+    .aboutme-left .btn {
+        width: 80%; /* Full-width button */
+    }
+
+    .aboutme-right img {
+        width: 100%; /* Full-width image */
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .aboutme {
+        padding: 0 10px; /* Further reduce padding */
+        height: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .skills h1 {
+        font-size: 40px; /* Adjust heading size for tablets */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack the left and right parts vertically */
+        gap: 60px; /* Reduce the gap between sections */
+    }
+
+    .skills-left, .skills-right {
+        margin-left: 0;
+        align-items: center; /* Center content for better alignment */
+    }
+}
+
+/* Media query for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .skills{
+        border-top: 1px solid var(--color-navbarBorder-dark);
+        padding:25px 0;
+    }
+
+
+    .skills-container {
+        flex-direction: column; /* Stack content vertically */
+        gap: 40px; /* Reduce the gap between left and right sections */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .skills-left, .skills-right {
+        margin-left: 0;
+        text-align: center; /* Center text for mobile */
+        gap: 20px; /* Reduce gap between items */
+    }
+
+}
+
+@media (max-width: 480px){
+
+.projects{
+    border-top: 1px solid var(--color-navbarBorder-dark);
+    padding: 0 10px;
+}
+
+}
+
+
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack contact-left and contact-right vertically */
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .contact-left, .contact-right {
+        max-width: 100%; /* Make both sections full width */
+        text-align: center; /* Center text for better readability */
+        padding: 0;
+    }
+
+    .contact-left p {
+        font-size: 16px; /* Slightly reduce text size */
+    }
+
+    .contact-title {
+        font-size: 36px; /* Adjust title size for medium devices */
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact{
+        border-top: 1px solid var(--color-navbarBorder-dark);
+    }
+    .contact-title {
+        font-size: 30px; /* Adjust title size for small devices */
+        line-height: 40px;
+    }
+
+    .contact-left p {
+        font-size: 14px; /* Further reduce paragraph text size */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px; /* Reduce input and textarea font size */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .contact-submit {
+        font-size: 14px; /* Adjust submit button size */
+        padding: 10px 20px; /* Reduce button padding */
+    }
+    .contact-left .globe {
+        display: none;
     }
 }
