@@ -16,30 +16,30 @@ new Typed('#typed', {
 });
 
 const skillImages = {
-    "HTML": "html.webp",
-    "CSS": "css.webp",
-    "JavaScript": "js.webp",
-    "Bootstrap": "bootstrap.webp",
-    "Tailwind CSS": "tailwindcss.webp",
-    "React": "react.webp",
-    "Node.js": "node js.webp",
-    "Express.js": "express.webp",
-    "Socket.io": "socketio.svg",
-    "C++": "cpp.webp",
-    "Core Java": "java.svg",
-    "MySQL": "mysql.webp",
-    "MongoDB": "mongodb.webp",
-    "Redis": "redis.png",
-    "Firebase": "firebase.webp",
-    "Git": "git.svg",
-    "GitHub": "github.svg",
-    "VSCode": "vscode.svg",
-    "Docker": "docker.svg",
-    "Postman": "postman.svg",
-    "MongoDB Atlas": "mongodb.webp",
-    "Vercel": "vercel.svg",
-    "Render": "render.webp",
-    "Flowise": "flowise.jpeg",
+    "HTML": "assets/html.webp",
+    "CSS": "assets/css.webp",
+    "JavaScript": "assets/js.webp",
+    "Bootstrap": "assets/bootstrap.webp",
+    "Tailwind CSS": "assets/tailwindcss.webp",
+    "React": "assets/react.webp",
+    "Node.js": "assets/node js.webp",
+    "Express.js": "assets/express.webp",
+    "Socket.io": "assets/socketio.svg",
+    "C++": "assets/cpp.webp",
+    "Core Java": "assets/java.svg",
+    "MySQL": "assets/mysql.webp",
+    "MongoDB": "assets/mongodb.webp",
+    "Redis": "assets/redis.png",
+    "Firebase": "assets/firebase.webp",
+    "Git": "assets/git.svg",
+    "GitHub": "assets/github.svg",
+    "VSCode": "assets/vscode.svg",
+    "Docker": "assets/docker.svg",
+    "Postman": "assets/postman.svg",
+    "MongoDB Atlas": "assets/mongodb.webp",
+    "Vercel": "assets/vercel.svg",
+    "Render": "assets/render.webp",
+    "Flowise": "assets/flowise.jpeg",
 };
 
 
@@ -93,69 +93,69 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const projects = [
     {
-      imgSrc: 'GM.png',
-      title: 'E-ticket Connect',
-      description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
-      technologies: ['react.webp', 'node js.webp', 'express.webp', 'mongodb.webp'],
+      imgSrc: 'assets/GM.png',
+      title: 'GulidMasters',
+      description: 'Built a website which serves as a Guild for gamers to explore different games, offering events, insights. Deployed frontend and backend on Firebase and Render.',
+      technologies: ['assets/react.webp', 'assets/node js.webp', 'assets/express.webp', 'assets/mongodb.webp'],
       liveProject: 'https://gaming-hub-98328.web.app',
       sourceCode: 'https://github.com/nikamaish/GuildMasters'
     },
     {
-      imgSrc: 'VM.png',
-      title: 'Trek Travel',
-      description: 'Plan your perfect trip with a comprehensive guide to hotels, travel options, and user reviews tailored to your needs.',
-      technologies: ['react.webp', 'socketio.svg', 'flask.svg', 'chartjs.svg', 'mongodb.webp'],
+      imgSrc: 'assets/VM.png',
+      title: 'VisualMaster',
+      description: 'Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding, particularly catering to newcomers in the stock market world.',
+      technologies: ['assets/react.webp', 'assets/socketio.svg', 'assets/flask.svg', 'assets/chartjs.svg', 'assets/mongodb.webp'],
       liveProject: 'https://vm-frontend-phi.vercel.app',
       sourceCode: 'https://github.com/nikamaish/VisualMaster_BE'
     },
 
     { 
-        imgSrc: 'Portfolio.png',
-        title: 'E-ticket Connect',
-        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
-        technologies: ['react.webp', 'css.webp', 'firebase.webp'],
+        imgSrc: 'assets/Portfolio.png',
+        title: 'Portfolio',
+        description: 'Developed a personal portfolio website to showcase my projects, skills, and experience. It has attractive UI and responsive. Deployed on Firebase.',
+        technologies: ['assets/react.webp', 'assets/css.webp', 'assets/firebase.webp'],
         liveProject: 'https://portfolio-aish.web.app',
         sourceCode: 'https://github.com/nikamaish/aish_portfolio'
     },
 
     { 
-        imgSrc: 'SimplyGoods.png',
-        title: 'E-ticket Connect',
-        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
-        technologies: ['react.webp', 'node js.webp', 'express.webp', 'mongodb.webp'],
+        imgSrc: 'assets/SimplyGoods.png',
+        title: 'SimplyGoods eCommerce',
+        description: 'SimplyGood is an e-commerce platform like Amazon and Flipkart. Deployed frontend and backend on cloud flatforms like Firebase and Vercel.',
+        technologies: ['assets/react.webp', 'assets/node js.webp', 'assets/express.webp', 'assets/mongodb.webp'],
         liveProject: 'https://simplygoods-aish.web.app',
         sourceCode: 'https://github.com/nikamaish/simply_Goods'
     },
 
     { 
-        imgSrc: 'QuizApp.png',
-        title: 'E-ticket Connect',
-        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
-        technologies: ['html.webp', 'css.webp','github.svg', 'js.webp'],
+        imgSrc: 'assets/QuizApp.png',
+        title: 'Quize Web App',
+        description: 'It integrates Medistream to utilize the microphone and camera, ensuring secure participation. It features time limits for each quiz and provides warnings as deadlines approach.',
+        technologies: ['assets/html.webp', 'assets/css.webp','assets/github.svg', 'assets/js.webp'],
         liveProject: 'https://nikamaish.github.io/Quiz_App',
         sourceCode: 'https://github.com/nikamaish/Quiz_App'
     },
     { 
-        imgSrc: 'Signature.png',
-        title: 'E-ticket Connect',
-        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
-        technologies: ['html.webp', 'css.webp','github.svg', 'js.webp'],
+        imgSrc: 'assets/Signature.png',
+        title: 'E-Signature Studio',
+        description: 'User-friendly platform where you can create your digital signature and download it for use anytime. Perfect for professionals, it ensures your signature is always accessible',
+        technologies: ['assets/html.webp', 'assets/css.webp','assets/github.svg', 'assets/js.webp'],
         liveProject: 'https://nikamaish.github.io/Signature_App',
         sourceCode: 'https://github.com/nikamaish/Signature_App'
     },
     { 
-        imgSrc: 'mulitstep form.png',
-        title: 'E-ticket Connect',
-        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
-        technologies: ['react.webp', 'tailwindcss.webp', 'vercel.svg'],
+        imgSrc: 'assets/mulitstep form.png',
+        title: 'MultiStep Form',
+        description: 'A multi-step form that allows users to input their details in a step-by-step manner. It is built using React and Tailwind CSS, and deployed on Netlify.',
+        technologies: ['assets/react.webp', 'assets/tailwindcss.webp', 'assets/vercel.svg'],
         liveProject: 'https://multistep-form-aish.netlify.app',
         sourceCode: 'https://github.com/nikamaish/Aeonaxy_React_Tailwind'
     },
     { 
-        imgSrc: 'WebCraftEditor.png',
-        title: 'E-ticket Connect',
-        description: 'Revolutionize ticketing by offering instant digital tickets, seamless payments, and efficient data management.',
-        technologies: ['html.webp', 'css.webp','github.svg', 'js.webp'],
+        imgSrc: 'assets/WebCraftEditor.png',
+        title: 'WebCraft Editor',
+        description: 'Platform where you can code and create shapes or tackle similar coding challenges. Ideal for developers and students, it offers a hands-on, interactive environment to practice.',
+        technologies: ['assets/html.webp', 'assets/css.webp','assets/github.svg', 'assets/js.webp'],
         liveProject: 'https://nikamaish.github.io/HTML_CSS_Editor',
         sourceCode: 'https://github.com/nikamaish/HTML_CSS_Editor'
     }
@@ -181,8 +181,8 @@ const projects = [
             ${project.technologies.map((techIcon) => `<img src="${techIcon}" alt="Technology">`).join('')}
           </div>
           <div class="project-actions">
-            <a href="${project.liveProject}" class="project-btn">Live Project</a>
-            <a href="${project.sourceCode}" class="project-btn">Source Code</a>
+            <a href="${project.liveProject}" target="_blank" class="project-btn">Live Project</a>
+            <a href="${project.sourceCode}" target="_blank" class="project-btn">Source Code</a>
           </div>
         </div>
       </div>
